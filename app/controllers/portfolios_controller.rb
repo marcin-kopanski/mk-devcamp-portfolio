@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
 		@portfolio_items = Portfolio.all
 	end
 	
+		def angular
+			@angular_portfolio_items = Portfolio.angular
+		end
+	
 	def show
 		@portfolio_item = Portfolio.find(params[:id])
 	end
@@ -51,6 +55,10 @@ class PortfoliosController < ApplicationController
 			format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully destroyed.' }
 			format.json { head :no_content }
 		end
+	end
+	
+	def angular
+		@angular_portfolio_items = Portfolio.angular
 	end
   
 	private
