@@ -55,6 +55,10 @@ end
         main_image: "https://placehold.it/600x400",
         thumb_image: "https://placehold.it/350x200"
     )
+   
+   Portfolio.last.technologies.create!(
+      name: "Angular"
+   )
 end
 
 puts "9 portfolios created"
