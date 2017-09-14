@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  include DeviseWhiteslit
+  include DeviseWhitelist
   
   protect_from_forgery with: :exception
   
