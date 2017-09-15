@@ -21,7 +21,7 @@ class PortfoliosController < ApplicationController
 	end
 	
 	def create
-		@portfolio_item = Portfolio.new(portfolio_params_with_technologies)
+		@portfolio_item = Portfolio.new(portfolio_params)
 		
 		respond_to do |format|
 			if @portfolio_item.save
@@ -62,13 +62,15 @@ class PortfoliosController < ApplicationController
 		@angular_portfolio_items = Portfolio.angular
 	end
   
+  #Private section
 	private
-		# Never trust parameters from the scary internet, only allow the white list through.
-		def portfolio_params
-			params.require(:portfolio).permit(:title, :subtitle, :body)
-		end
-		
-		def portfolio_params_with_technologies
-			params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
-		end
+	
+	# Never trust parameters from the scary internet, only allow the white list through.
+	def portfolio_params
+		params.require(:portfolio).permit(:title, 
+													 :subtitle, 
+													 :body, 
+													 technologies_attributes: [:name]
+													)
+	end
 end
