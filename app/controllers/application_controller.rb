@@ -4,5 +4,5 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContentConcern
   
-  protect_from_forgery with: :exception
+  protect_from_forgery prepend: true, with: :exception
 end
