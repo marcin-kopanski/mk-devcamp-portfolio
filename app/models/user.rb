@@ -14,3 +14,12 @@ class User < ApplicationRecord
     self.name.split.last
   end
 end
+
+# def get_facebook_messages
+#   begin
+#     contacts_fb
+#     @messages = retrieve_message
+#   rescue => e
+#     flash[:error] = "Error occured contacting Facebook API: #{e}"
+#   end
+# end
