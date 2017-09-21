@@ -1,3 +1,9 @@
+GIT
+  remote: https://bitbucket.org/kopanskiapps/kopanskiviewtool
+  revision: 008c245042593de23d9b9130d73ee5055f10c440
+  specs:
+    kopanski_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -198,6 +204,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
+  kopanski_view_tool!
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
   pry-byebug
