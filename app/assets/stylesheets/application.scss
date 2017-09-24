@@ -130,7 +130,6 @@ body {
   color: rgba(255,255,255,.5);
 }
 
-
 /*
  * Affix and center
  */
@@ -166,4 +165,17 @@ body {
   .cover-container {
     width: 55rem;
   }
+}
+
+/*
+ * Custom styles
+ */
+
+.card-body {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
 }
