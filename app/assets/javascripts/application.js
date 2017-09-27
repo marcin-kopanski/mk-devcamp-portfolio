@@ -15,6 +15,9 @@
 //= require_tree .
 
 // Bootstrap
-//= require jquery3
+//= require jquery
+//= require jquery-ui
 //= require popper
 //= require bootstrap-sprockets
+
+//= require html.sortable
