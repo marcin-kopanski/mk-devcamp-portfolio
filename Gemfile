@@ -64,3 +64,6 @@ gem 'jquery-rails'
 
 # mk custom icons
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
+# mk custom jquery ui
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
