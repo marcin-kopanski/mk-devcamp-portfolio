@@ -23,4 +23,52 @@ module ApplicationHelper
    def copyright_generator
       KopanskiViewTool::Renderer.copyright "Marcin Kopański", "All rights reserved"
    end
+   
+   def nav_items
+      [
+         {
+            url: root_path,
+            title: "Home"
+         },
+         {
+            url: about_me_path,
+            title: "About me"
+         },
+         {
+            url: contact_path,
+            title: "Contact"
+         },
+         {
+            url: blogs_path,
+            title: "Blog"
+         },
+         {
+            url: portfolios_path,
+            title: "Portfolio"
+         }
+      ]
+   end
+   
+   def nav_helpler css_class, html_tag
+      
+      # nav_links = <<NAV
+      # <#{html_tag}><a href="#{root_path}" class="#{css_class} #{active? root_path}">Home</a></#{html_tag}>
+      # <#{html_tag}><a href="#{about_me_path}" class="#{css_class} #{active? about_me_path}">About me</a></#{html_tag}>
+      # <#{html_tag}><a href="#{contact_path}" class="#{css_class} #{active? contact_path}">Contact</a></#{html_tag}>
+      # <#{html_tag}><a href="#{blogs_path}" class="#{css_class} #{active? blogs_path}">Blog</a></#{html_tag}>
+      # <#{html_tag}><a href="#{portfolios_path}" class="#{css_class} #{active? portfolios_path}">Portfolio</a></#{html_tag}>
+      # NAV
+      
+      nav_links = ""
+      
+      nav_items.each do |item|
+         nav_links << "<#{html_tag}><a href=\"#{item[:url]}\" class=\"#{css_class} #{active? item[:url]}\">#{item[:title]}</a></#{html_tag}>"
+      end
+
+      nav_links.html_safe
+   end
+   
+   def active? path
+      "active" if current_page? path
+   end
 end
