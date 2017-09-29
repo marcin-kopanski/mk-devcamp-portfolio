@@ -31,5 +31,8 @@ module DevcampPortfolio
     
     # Strong Params
     # conflig.action_controller.permit_all_parameters = true
+    
+    # mk custom
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end

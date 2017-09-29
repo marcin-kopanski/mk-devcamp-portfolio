@@ -79,3 +79,4 @@ gem 'cocoon', '~> 1.2', '>= 1.2.10'
 
 # mk custom
 gem 'gritter', '~> 1.2'
+gem 'twitter', '~> 6.1'
