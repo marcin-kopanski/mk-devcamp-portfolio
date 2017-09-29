@@ -76,3 +76,6 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 
 # mk custom js library
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
+
+# mk custom
+gem 'gritter', '~> 1.2'
