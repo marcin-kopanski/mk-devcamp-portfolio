@@ -170,7 +170,7 @@ body {
    .masthead,
    .mastfoot,
    .cover-container {
-      width: 55rem;
+      width: 65rem;
    }
 }
 
@@ -223,4 +223,17 @@ body {
 
 .lead {
    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.8);
+}
+
+.tech-news {
+   color: black;
+   margin: 20px;
+
+   a {
+      color: green;
+   }
+
+   >.card {
+      padding: 30px;
+   }
 }
