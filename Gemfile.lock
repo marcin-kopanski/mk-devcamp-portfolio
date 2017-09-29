@@ -1,8 +1,8 @@
 GIT
   remote: https://bitbucket.org/kopanskiapps/kopanskiviewtool
-  revision: 008c245042593de23d9b9130d73ee5055f10c440
+  revision: c7190fd27bc08693c59d8d5a79e1b14e27431d66
   specs:
-    kopanski_view_tool (0.1.0)
+    kopanski_view_tool (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -294,7 +294,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails (~> 6.0, >= 6.0.1)
   kaminari (~> 1.0, >= 1.0.1)
-  kopanski_view_tool!
+  kopanski_view_tool (~> 0.1.1)!
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.8)
   petergate (~> 1.7, >= 1.7.5)
