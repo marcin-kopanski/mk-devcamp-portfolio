@@ -1,9 +1,14 @@
 <div class="album text-muted">
    <div class="container">
-      <%= link_to "Create new Portfolio", new_portfolio_path if logged_in?(:site_admin) %>
-      
       <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
          <%= render partial: "portfolio_item", collection: @portfolio_items %>
       </div>
+      
+      <% if logged_in?(:site_admin) %>
+         <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3"><%= link_to "Create new Portfolio", new_portfolio_path, class: "btn btn-primary btn-block"  %></div>
+         </div>
+      <% end %>
    </div>
 </div>
