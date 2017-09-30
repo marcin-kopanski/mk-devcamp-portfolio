@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :comments
   root to: 'pages#home'
   
   get 'about-me', to: 'pages#about'
@@ -19,4 +18,6 @@ Rails.application.routes.draw do
   end
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'angular-items', to: 'portfolios#angular'
+  
+  mount ActionCable.server => '/cable'
 end
