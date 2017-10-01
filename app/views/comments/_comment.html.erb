@@ -11,7 +11,7 @@
                   <%= comment.content %>
                </div>
                
-               <div class="comment-attribution">
+               <div class="comment-attribution pt-2">
                   Comment posted by <span class="comment-name"><%= comment.user.name %></span> 
                   <span class="comment-time"><%= distance_of_time_in_words(comment.created_at, Time.now) %></span> ago
                </div>
