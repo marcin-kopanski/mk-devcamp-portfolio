@@ -5,6 +5,15 @@
    </div>
    
    <div class="sidebar-module">
+      <h4>Topics</h4>
+      <div class="text-right">
+         <% @sidebar_topics.each do |topic| %>
+            <p><%= link_to topic.title, topic_path(topic) %></p>
+         <% end %>
+      </div>
+   </div>
+   
+   <div class="sidebar-module">
       <ol class="list-unstyled social-links float-right">
          <li><a href="#"><%= fa_icon "bitbucket" %></a></li>
          <li><a href="#"><%= fa_icon "instagram" %></a></li>
