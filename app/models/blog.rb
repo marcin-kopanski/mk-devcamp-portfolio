@@ -1,7 +1,7 @@
 class Blog < ApplicationRecord
-   validates_presence_of :title, :body
+   validates_presence_of :title, :body, :topic_id
    
-   # belongs_to :topic
+   belongs_to :topic
    has_many :comments, dependent: :destroy
    
    enum status: { draft:0, published:1 }
@@ -14,5 +14,9 @@ class Blog < ApplicationRecord
    
    def self.featured_blogs
       limit(2)
+   end
+   
+   def self.recent
+      order(created_at: :desc)
    end
 end

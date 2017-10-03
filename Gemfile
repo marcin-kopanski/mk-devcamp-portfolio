@@ -83,3 +83,7 @@ gem 'twitter', '~> 6.1'
 
 # mk custom redis
 gem 'redis', '~> 4.0', '>= 4.0.1'
+
+# mk custom markdown
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
