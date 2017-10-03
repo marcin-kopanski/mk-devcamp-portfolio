@@ -237,3 +237,20 @@ body {
       padding: 30px;
    }
 }
+
+.app-card-container {
+   color: black;
+   text-align: left;
+
+   >.card {
+      padding: 40px;
+   }
+
+   .profile-img img {
+      border: 1px solid grey;
+   }
+
+   a {
+      color: blue;
+   }
+}
