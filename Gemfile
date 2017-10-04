@@ -56,7 +56,7 @@ gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.
 gem 'devise', '~> 4.3'
 gem 'petergate', '~> 1.7', '>= 1.7.5'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
-gem 'kopanski_view_tool', '~> 0.1.1', git: 'https://bitbucket.org/kopanskiapps/kopanskiviewtool'
+gem 'kopanski_view_tool', '~> 0.1.1', git: 'https://bitbucket.org/kopanskiapps/kopanskiviewtool.git'
 
 # mk custom Bootstrap
 gem 'bootstrap', '~> 4.0.0.beta'

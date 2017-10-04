@@ -1,5 +1,5 @@
 GIT
-  remote: https://bitbucket.org/kopanskiapps/kopanskiviewtool
+  remote: https://bitbucket.org/kopanskiapps/kopanskiviewtool.git
   revision: c7190fd27bc08693c59d8d5a79e1b14e27431d66
   specs:
     kopanski_view_tool (0.1.1)
@@ -320,4 +320,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2
