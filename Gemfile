@@ -82,7 +82,7 @@ gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
 
 # mk custom redis
-gem 'redis', '~> 4.0', '>= 4.0.1'
+gem 'redis', '~> 3.3.5'
 
 # mk custom markdown
 gem 'redcarpet', '~> 3.4'
